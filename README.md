@@ -9,6 +9,7 @@ It's based (loosely) on some of the [ristretto](https://github.com/dgraph-io/ris
 It uses map sharding and batching to improve availability and
 reduce number of locks.
 
+
 Let's get to examples:
 ```go
 	c := NewCache(cacheSize, nil)
@@ -27,6 +28,11 @@ Let's get to examples:
 ```
 
 for more sophisticated examples with concurrent access see test files.
+
+To install golru run
+```sh
+go get -u github.com/aleert/golru
+```
 
 You can also run tests with
 ```sh
